@@ -4,16 +4,16 @@ Basically this project is based on transfer learning to train a simple classifie
 Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0 <br>
 ## 1. Set up <br>
 ### Clone this Repository<br>
-        git clone https://github.com/qzhizhou/EC601-MiniProject2 <br>
-        cd EC601-MiniProject2 <br>
+        git clone https://github.com/qzhizhou/EC601-MiniProject2 
+        cd EC601-MiniProject2 
 
 ## 2. Retrain the NetWork
 ### Configuration
         IMAGE_SIZE=224 <br>
-        ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}" <br>
+        ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}" 
 
 ### Start Tensorboard
-        tensorboard --logdir tf_files/training_summaries &  <br>
+        tensorboard --logdir tf_files/training_summaries & 
 
 ### Run the Trainging
         python -m scripts.retrain \
@@ -24,12 +24,12 @@ Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
         --output_graph=tf_files/retrained_graph.pb \
         --output_labels=tf_files/retrained_labels.txt \
         --architecture="${ARCHITECTURE}" \
-        --image_dir=tf_files/photos <br>
+        --image_dir=tf_files/photos 
         
 ## 3. Classifying an image
         python -m scripts.label_image \
         --graph=tf_files/retrained_graph.pb  \
-        --image=tf_files/photos/cats/cat.100.jpg <br>
+        --image=tf_files/photos/cats/cat.100.jpg 
 
 
 
