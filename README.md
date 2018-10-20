@@ -9,7 +9,7 @@ Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
 
 ## 2. Retrain the NetWork
 ### Configuration
-        IMAGE_SIZE=224 <br>
+        IMAGE_SIZE=224 
         ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}" 
 
 ### Start Tensorboard
