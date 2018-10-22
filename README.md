@@ -29,7 +29,7 @@ Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
 ### Classifying an image
         python -m scripts.label_image \
         --graph=tf_files/retrained_graph.pb  \
-        --image=tf_files/photos/cats/cat.100.jpg 
+        --image=dog.jpg 
 
 ## 3. Retrain with Inception Model :
 ### Run the trainging
@@ -46,7 +46,7 @@ Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
       
 ### Classifying an image
         python3.6 -m scripts.label_image2 \
-        --image=tf_files/photos/cats/cat.99.jpg \
+        --image=cat.jpg \
         --graph=tf_files/output_graph.pb \
         --labels=tf_files/retrained_labels2.txt \
         --input_layer=Mul \
