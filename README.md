@@ -17,7 +17,7 @@ Refereral: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
 
 ### Run the Trainging
         python -m scripts.retrain \
-        --bottleneck_dir=tf_files/bottlenecks \
+        --bottleneck_dir=tf_files/bottlenecks1 \
         --how_many_training_steps=500 \
         --model_dir=tf_files/models/ \
         --summaries_dir=tf_files/training_summaries/"${ARCHITECTURE}" \
